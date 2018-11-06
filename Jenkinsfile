@@ -9,12 +9,11 @@ pipeline {
 
       }
       steps {
-        sh ''''''
+        sh echo "Walla"
       }
     }
   }
   parameters {
-    choice(name: 'REQUESTED_ACTION', choices: '''Build
-''', description: 'Type of action to perform')
+    choice(name: 'REQUESTED_ACTION', choices: '''Build''', description: 'Type of action to perform')
   }
 }
